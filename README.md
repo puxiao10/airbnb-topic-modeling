@@ -29,15 +29,24 @@ This project analyzes customer reviews from Seattle Airbnb listings to uncover c
 
 ![Word Could](images/Topic_word_cloud.png)
 
+---
+
+## 🧩 Insights From Topic Modeling
+
+The resulting topics were dominated by generic, high-frequency words like “great,” “location,” “place,” and “Seattle,” offering limited actionable insights. 
+This revealed two key issues: 
+	- the need for further preprocessing to remove common filler terms, and the 
+	- limitations of TF-IDF in capturing nuanced or contextual language (e.g., “Space Needle view,” “quiet neighborhood”). 
+
 ### BERTopic Topic Distance Map
 
 ![Topic Distance Map](images/Topic_Distance_Map.png)
 
 ---
 
-## 🧩 Key Insights
+## 🧩 Insights From BERTopic
 
-- TF-IDF revealed mostly generic patterns (e.g. "great", "location", "clean")
-- BERTopic provided more nuanced themes like responsiveness, space quality, and neighborhood charm
-- Topic modeling offers actionable insights for improving listings and tailoring guest experiences
+The resulting topics were much better now, we started to see useful information like “mattress”, “rooftop”, “pillow”, or location near “restaurant”, “alki beach”, etc.
+From the distance map, we can see many topics are very close to each other, so we can merge them together for better summary.
+
 
